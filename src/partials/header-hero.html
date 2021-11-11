@@ -1,31 +1,16 @@
-<header>
-   <article class="example">
-      <h1>HTML-фрагменты</h1>
-   
-      <!-- Путь к изображениям из HTML-фрагмента такой, как из файла index.html -->
-      <img src="images/demo.jpg" alt="" width="320" />
-      <p>
-         Плагин
-         <a href="https://github.com/posthtml/posthtml-include" target="_blank" rel="noopener noreferrer">
-            posthtml-include
-         </a>
-         позволяет добавлять в HTML-файлы страниц код из других HTML-файлов (фрагментов). Фрагменты
-         хранятся в папке
-         <code>src/partials</code>. Добавление происходит при компиляции файлов страниц, например
-         <code>index.html</code>.
-      </p>
-   
-      <p>
-         Этот файл <code>example.html</code> &mdash; пример такого фрагмента, с разметкой определённой
-         части главной страницы. Это очень удобно при командной разработке на студенческих проектах,
-         когда в одном HTML-файле пишет несколько человек сразу.
-      </p>
-   
-      <p>
-         Синтаксис добавление фрагмента в главный файл:
-         <code> &lt;include src="./partials/имя-файла.html"&gt;&lt;/include&gt; </code>
-      </p>
-   
-      <div class="background"></div>
-   </article>
+<header class=" hero-header container">
+   <nav class="hero-header__nav">
+      <a href="#" class="logo"><img src="/images/logo.png" alt="Логотип"></a>
+      <img class="menu--open" src="/images/menu-open.svg" alt="Бургер меню">
+   </nav>
+   <div class="circle">
+      <img class="ice-cream__img" src="/images/ice-cream.png" alt="ice-cream">
+   </div>
+   <div class="hero__block">
+      <h1 class="header-title"><span class="header-title__text">ice cream<br> made with</span> passion</h1>
+      <ul class="button-hero__list">
+         <li class="button-hero__item"><a href="#" class="button-hero__link">Products</a></li>
+         <li class="button-hero__item"><a href="#" class="button-hero__link">How it’s made?</a></li>
+      </ul>
+   </div>
 </header>
