@@ -1,24 +1,23 @@
-<header class="hero-header container">
-   <nav class="hero-header__nav">
+<header class="hero-header">
+   <div class="hero-header__container container">
       <a href="#" class="logo"><img src="./images/logo.png" alt="Логотип"></a>
-   </nav>
-   <button class="button-menu menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-      <svg class="menu-open">
-         <use href="./images/icons.svg#burger"></use>
-      </svg>
-   </button>
-   <!-- <div class="circle">
+      <button class="button-menu menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+         <img src="./images/burger.svg" alt="">
+      </button>
+      <div class="circle">
+      </div>
+      <picture>
+         <source srcset="./images/hero-ice-cream-480.png 1x, ./images/hero-ice-cream-480@2x.png 2x"
+            media="(max-width: 767px)">
+         <img class="ice-cream__img" src="./images/ice-cream.png" alt="ice-cream">
+      </picture>
+      <div class="hero__block">
+         <h1 class="header-title"><span class="header-title__text">ice cream<br> made with</span> passion</h1>
+         <ul class="button-hero__list">
+            <li class="button-hero__item"><a href="#" class="button-hero__link">Products</a></li>
+            <li class="button-hero__item"><a href="#" class="button-hero__link">How it’s made?</a></li>
+         </ul>
+      </div>
    </div>
-   <picture>
-      <source srcset="./images/hero-ice-cream-480.png 1x, ./images/hero-ice-cream-480@2x.png 2x"
-         media="(max-width: 767px)">
-      <img class="ice-cream__img" src="./images/ice-cream.png" alt="ice-cream">
-   </picture>
-   <div class="hero__block">
-      <h1 class="header-title"><span class="header-title__text">ice cream<br> made with</span> passion</h1>
-      <ul class="button-hero__list">
-         <li class="button-hero__item"><a href="#" class="button-hero__link">Products</a></li>
-         <li class="button-hero__item"><a href="#" class="button-hero__link">How it’s made?</a></li>
-      </ul>
-   </div> -->
+   </section>
 </header>
