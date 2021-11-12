@@ -18,11 +18,11 @@
 <symbol id="ellipse" viewBox="0 0 32 32">
 <path  d="M30.511 16c0 8.157-6.612 14.769-14.769 14.769s-14.769-6.612-14.769-14.769c0-8.157 6.612-14.769 14.769-14.769s14.769 6.612 14.769 14.769z"></path>
 </symbol>
-<symbol id="iclose" viewBox="0 0 32 32">
-<path  stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.519 2l26.963 28M2 29.481l28-26.963"></path>
-</symbol>
 <symbol id="burger" viewBox="0 0 32 32">
-<path  stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6" d="M0 6.4h32M0 16h32M0 25.6h32"></path>
+<path d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z"></path>
+</symbol>
+<symbol id="iclose" viewBox="0 0 32 32">
+<path d="M32 3.223l-3.223-3.223-12.777 12.777-12.777-12.777-3.223 3.223 12.777 12.777-12.777 12.777 3.223 3.223 12.777-12.777 12.777 12.777 3.223-3.223-12.777-12.777 12.777-12.777z"></path>
 </symbol>
 </defs>
 </svg>
