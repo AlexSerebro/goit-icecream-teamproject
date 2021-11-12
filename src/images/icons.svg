@@ -35,11 +35,17 @@
             </path>
         </symbol>
         <symbol id="iclose" viewBox="0 0 32 32">
-<path d="M32 3.223l-3.223-3.223-12.777 12.777-12.777-12.777-3.223 3.223 12.777 12.777-12.777 12.777 3.223 3.223 12.777-12.777 12.777 12.777 3.223-3.223-12.777-12.777 12.777-12.777z"></path>
-</symbol>
-        <symbol id="burger" viewBox="0 0 32 32">
-            <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6"
-                d="M0 6.4h32M0 16h32M0 25.6h32"></path>
+
+            <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2"
+                d="M2.519 2l26.963 28M2 29.481l28-26.963"></path>
+        </symbol>
+        <symbol id="icon-burger" viewBox="0 0 46 32">
+            <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter"
+                stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 2.286h45.714"></path>
+            <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter"
+                stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 16h45.714"></path>
+            <path fill="none" stroke="#d41443" style="stroke: var(--color1, #d41443)" stroke-linejoin="miter"
+                stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.2857" d="M0 29.714h45.714"></path>
         </symbol>
     </defs>
 
