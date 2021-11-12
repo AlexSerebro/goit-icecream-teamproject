@@ -1,27 +1,27 @@
-// .nav__button {
-//   position: absolute;
-//   top: 10px;
-//   right: 15px;
+.nav__button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
 
-//   display: block;
-//   width: 40px;
-//   height: 40px;
-//   margin: 0;
-//   padding: 0;
-//   background-color: transparent;
-//   border: none;
-//   cursor: pointer;
-//   color: $title-text-color;
+  display: block;
+  width: 40px;
+  height: 40px;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  color: $primary-light-text-color;
 
-//   @media screen and (min-width: $tablet) {
-//     display: none;
-//   }
-//   &:hover,
-//   &:focus {
-//     color: $accent-color;
-//     fill: currentColor;
-//   }
-// }
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+  &:hover,
+  &:focus {
+    color: $secondary-dark-accent-color;
+    fill: currentColor;
+  }
+}
 
 // .nav__button.nav__button--open {
 //   position: static;
