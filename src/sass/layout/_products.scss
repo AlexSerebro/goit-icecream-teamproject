@@ -1,18 +1,13 @@
 .products {
   padding-top: 121px;
   padding-bottom: 98px;
-  background-color: #ffffff;
+  background-color: var(--light-bg-color);
   text-align: center;
-}
-.container {
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .pre-title,
 .section-title {
   margin: 0 auto;
-  //   text-align: center;
   text-transform: uppercase;
 }
 
@@ -116,7 +111,7 @@
     line-height: calc(23 / 20);
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: var(--light-bg-color);
 
     &::after {
       content: '\00B7\00B7\00B7';
@@ -138,7 +133,7 @@
     font-size: 14px;
     line-height: calc(21 / 14);
     letter-spacing: 0.04em;
-    color: #ffffff;
+    color: var(--light-bg-color);
     margin-bottom: 30px;
   }
 }
