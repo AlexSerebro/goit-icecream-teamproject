@@ -1,0 +1,71 @@
+.customer {
+  padding-top: 82px;
+  padding-bottom: 86px;
+  width: 280px;
+  text-align: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 57px;
+  padding-right: 66px;
+  &::before {
+    content: close-quote;
+    background-color: #e1e1e1;
+  }
+}
+.customer__foto {
+  align-items: center;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.customer__text {
+  position: relative;
+  text-align: center;
+  align-items: center;
+  margin-top: 72px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include font(DM Sans, 12px, 500, 2.55, 0.03em, $primary-dark-text-color);
+  width: 157px;
+  line-height: 20px;
+
+  background-image: repeating-linear-gradient(180deg, transparent, transparent 19px, #e1e1e1 20px);
+
+  &::after {
+    position: absolute;
+    content: '\2022\2003\2022\2003\2022';
+    bottom: -50px;
+    left: 40%;
+    color: $dark-hover-color;
+  }
+  &::before {
+    position: absolute;
+    content: '';
+    font-size: 54px;
+  }
+}
+
+.customer__address {
+  margin-top: 72px;
+  @include font(DM Sans, 14px, 500, 1.86, 0.04em, $primary-dark-text-color);
+}
+.marker__list {
+  margin-top: 30px;
+}
+.marker__item {
+  width: 12px;
+  height: 12px;
+  & + & {
+    margin-left: 10px;
+  }
+}
+.marker__list {
+  display: flex;
+  justify-content: center;
+}
+.marker__icon {
+  width: 12px;
+  height: 12px;
+}
