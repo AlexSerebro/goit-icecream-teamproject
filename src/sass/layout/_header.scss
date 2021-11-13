@@ -1,9 +1,5 @@
 .hero-header {
   background-color: $hero-bg-color;
-}
-
-.hero-header__container {
-  position: relative;
   overflow: hidden;
 }
 
@@ -68,14 +64,17 @@
   z-index: 3;
   top: 137px;
   width: 218px;
+
+  animation: opacity 3s;
 }
 
 .hero__title {
-  @include font(Titan One, 26px, 400, 1.15, 0.04em, $primary-light-text-color);
+  @include font(Titan One, 48px, 400, 1, 0.04em, $dark-accent-color);
   text-transform: uppercase;
 }
 
 .hero-title__text {
+  display: inline-block;
   @include font(Titan One, 26px, 400, 1.15, 0.04em, $primary-light-text-color);
 }
 
@@ -183,5 +182,14 @@
   }
   to {
     transform: translateY(0%);
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
