@@ -4,8 +4,9 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-
+@import './base/common';
 @import './utils/breakpoints';
+@import './utils/reset';
 @import './utils/visual-hiden';
 @import './utils/global-set';
 @import './utils/mixins';

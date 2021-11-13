@@ -1,0 +1,120 @@
+.products {
+  @include section(121px, 98px);
+  background-color: $light-bg-color;
+  text-align: center;
+}
+
+.pre-title,
+.section-title {
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.pre-title {
+  margin-bottom: 15px;
+  @include font(Titan One, 18px, 400, 1.16, inherit, $light-accent-color);
+}
+
+.section-title {
+  margin-bottom: 144px;
+  @include font(Titan One, 34px, 400, 1.14, 0.04em, $dark-accent-color);
+}
+
+.products-list {
+  margin-bottom: -130px;
+
+  &__item {
+    border-radius: 24px;
+    padding: 161px 40px 41px 40px;
+    max-width: 480px;
+    position: relative;
+    margin-bottom: 130px;
+
+    @media screen and (max-width: 767px) {
+      margin: 130px auto;
+    }
+
+    &_green::before,
+    &_pink::before,
+    &_brown::before {
+      content: '';
+      position: absolute;
+      z-index: 9;
+      display: block;
+      width: 249px;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -113px);
+      height: 252px;
+      background-size: contain;
+    }
+
+    &_pink {
+      background: $hero-bg-color;
+      &::before {
+        background-image: url(/images/product1-480.png);
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url(/images/product1-480@2x.png);
+        }
+      }
+    }
+
+    &_green {
+      background: $second-additional-accent-color;
+      &::before {
+        background-image: url(/images/product3-480.png);
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url(/images/product3-480@2x.png);
+        }
+      }
+    }
+
+    &_brown {
+      background: $first-additional-accent-color;
+      &::before {
+        background-image: url(/images/product2-480.png);
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+          background-image: url(/images/product2-480@2x.png);
+        }
+      }
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    @include font(Titan One, 20px, 400, 1.15, 0.04em, $light-bg-color);
+
+    &::after {
+      content: '\00B7\00B7\00B7';
+      width: 100%;
+      height: 6px;
+      font-size: 32px;
+      display: block;
+      line-height: 0.2;
+      font-family: DM Sans;
+      font-weight: 900;
+      margin-bottom: 30px;
+      margin-top: 24px;
+    }
+  }
+
+  &__description {
+    margin-bottom: 30px;
+    @include font(DM Sans, 14px, 700, 1.52, 0.04em, $light-bg-color);
+  }
+}
+
+.btn_icon_arrow {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background-image: url(/images/button-arrow-480.png);
+  background-size: contain;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(/images/button-arrow-480@2x.png);
+  }
+}
