@@ -4,22 +4,65 @@
 }
 
 .header {
-  position: relative;
+  @media screen and (max-width: 767px) {
+    position: relative;
+    padding-top: 6px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    position: relative;
+    z-index: 3;
+    display: flex;
+    padding-top: 37px;
+  }
+}
+
+.header-btn__list {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 .button-menu {
-  position: absolute;
-  top: 22px;
-  right: 0;
   display: inline-block;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  padding: 0;
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 22px;
+    right: 0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 30px;
+  }
+}
+
+.header-btn {
+  width: 160px;
+  height: 44px;
+
+  @include font(DM Sans, 16px, 700, 1.3, 0.04em, $dark-accent-color);
+  background-color: $primary-light-text-color;
+  border-radius: 22px;
+  align-items: center;
+  text-align: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    background-color: $light-hover-color;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .logo {
   display: inline-block;
-  padding-top: 6px;
 }
 
 .icon-burger {
@@ -32,6 +75,10 @@
   width: 100%;
   height: 446px;
   margin: 0 auto;
+
+  @media screen and (min-width: $tablet) {
+    height: 308px;
+  }
 }
 
 .circle {
@@ -44,19 +91,29 @@
   z-index: 1;
   background: $light-accent-color;
   animation: fadein 2s;
+
+  @media screen and (min-width: $tablet) {
+    top: -60px;
+    right: 103px;
+  }
 }
 
 .ice-cream__img {
   position: absolute;
   z-index: 2;
-  bottom: 0;
-  right: 32px;
+  top: 9px;
+  left: 81px;
 
   animation: up 2s;
   // animation-name: left-right;
   // animation-duration: 3s;
   // animation-timing-function: linear;
   // animation-iteration-count: infinite;
+
+  @media screen and (min-width: $tablet) {
+    top: 32px;
+    left: 71px;
+  }
 }
 
 .hero-block {
@@ -64,23 +121,37 @@
   z-index: 3;
   top: 137px;
   width: 218px;
-
   animation: opacity 3s;
+
+  @media screen and (min-width: $tablet) {
+    top: 15px;
+    width: 162px;
+  }
 }
 
 .hero__title {
   @include font(Titan One, 48px, 400, 1, 0.04em, $dark-accent-color);
   text-transform: uppercase;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 34px;
+    line-height: 1;
+  }
 }
 
 .hero-title__text {
   display: inline-block;
   @include font(Titan One, 26px, 400, 1.15, 0.04em, $primary-light-text-color);
+
+  @media screen and (min-width: $tablet) {
+    font-size: 22px;
+    line-height: 1.13;
+  }
 }
 
 .hero-button__list {
   display: flex;
-  margin-top: 19px;
+  margin-top: 20px;
   list-style: none;
 }
 
@@ -122,6 +193,118 @@
   @include flex(flex, center, center, null, null);
   color: inherit;
   text-decoration: none;
+}
+
+.milk-card {
+  width: 238px;
+  margin-top: 19px;
+  display: flex;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.milk-meta {
+  display: flex;
+  flex-direction: column;
+  margin-top: 47px;
+}
+
+.milk-card__text {
+  @include font(DM Sans, 8px, 400, 1.5, null, $primary-light-text-color);
+}
+
+.milk-card__btn {
+  margin-top: 9px;
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background-image: url(/images/hero-arrow-right.png);
+  background-size: cover;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(/images/hero-arrow-right@2x.png);
+  }
+}
+
+.data__list {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.data-first__item,
+.data-second__item {
+  position: relative;
+}
+
+.data-first__item {
+  margin-top: 12px;
+
+  & .data-item__number {
+    text-align: center;
+  }
+}
+
+.data-second__item {
+  margin-top: 13px;
+  width: 51px;
+  height: 43px;
+
+  & .data-item__number {
+    text-align: center;
+  }
+
+  & .data-item__text {
+    text-align: start;
+  }
+}
+
+.data-item__ellipse {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 50%;
+  background-color: $light-bg-color;
+}
+.data-item__number {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+  text-align: start;
+  @include font(Titan One, 28px, 400, 1.14, 0.04, $secondary-dark-accent-color);
+}
+
+.data-item__text {
+  text-align: center;
+  @include font(DM Sans, 8px, 400, 1.25, null, $primary-light-text-color);
+}
+
+.hero-galochka__img {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  @media screen and (min-width: $tablet) {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+    transform-origin: 0 100%;
+    transform: rotate(90deg);
+    animation-name: galochka;
+    animation-delay: 1300ms;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+  }
 }
 
 ////animate css
@@ -191,5 +374,14 @@
   }
   to {
     opacity: 1;
+  }
+}
+
+@keyframes galochka {
+  from {
+    transform: rotate(87deg);
+  }
+  to {
+    transform: rotate(0deg);
   }
 }

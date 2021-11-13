@@ -1,28 +1,83 @@
 <header class="hero-header">
    <div class="container">
       <div class="header">
-         <a href="#" class="logo"><img src="./images/logo.png" alt="Логотип"></a>
-         <button class="button-menu menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-            <svg class="icon-burger">
-               <use href="./images/icons.svg#icon-burger"></use>
-            </svg>
-         </button>
+         <a href="#" class="logo">
+            <picture>
+               <source srcset="./images/logo.png 1x, ./images/logo@2x.png 2x">
+               <img src="./images/logo.png" alt="Logo">
+            </picture>
+         </a>
+         <ul class="header-btn__list">
+            <li class="header-btn__item">
+               <button class="button-menu menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                  <svg class="icon-burger">
+                     <use href="./images/icons.svg#icon-burger"></use>
+                  </svg>
+               </button>
+            </li>
+            <li class="header-btn__item">
+               <button type="button" class="header-btn btn">Buy now
+                  <svg width="6" height="8" class="menu-btn__svg">
+                     <use href="./images/icons.svg#ivector" class=""></use>
+                  </svg>
+               </button>
+            </li>
+         </ul>
+
+
       </div>
       <div class="hero">
          <div class="circle">
+            <picture>
+               <source srcset="./images/hero-ice-cream-480.png 1x, ./images/hero-ice-cream-480@2x.png 2x"
+                  media="(max-width: 767px)">
+               <source srcset="./images/hero-ice-cream-768-min.png 1x, ./images/hero-ice-cream-768@2x-min.png 2x"
+                  media="(min-width: 768px)">
+               <img class="ice-cream__img" src="./images/ice-cream.png" alt="ice-cream">
+            </picture>
          </div>
-         <picture>
-            <source srcset="./images/hero-ice-cream-480.png 1x, ./images/hero-ice-cream-480@2x.png 2x"
-               media="(max-width: 767px)">
-            <img class="ice-cream__img" src="./images/ice-cream.png" alt="ice-cream">
-         </picture>
          <div class="hero-block">
             <h1 class="hero__title"><span class="hero-title__text">ice cream made with</span> passion</h1>
             <ul class="hero-button__list">
                <li class="hero-button__item"><a href="#" class="hero-button__link">Products</a></li>
                <li class="hero-button__item"><a href="#" class="hero-button__link">How it’s made?</a></li>
             </ul>
+            <div class="milk-card">
+               <picture class="img">
+                  <source srcset="./images/hero-milk-768-min.png 1x, ./images/hero-milk-768@2x-min.png 2x"
+                     media="(min-width: 768px)">
+                  <source srcset="./images/hero-milk-1280-min.png 1x, ./images/hero-milk-1280@2x-min.png 2x"
+                     media="(min-width: 1280px)">
+                  <img class="img" src="./images/hero-milk-768-min.png" alt="Milk glass">
+               </picture>
+               <div class="milk-meta">
+                  <p class="milk-card__text">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit,<br> sed do
+                     eiusmod
+                     tempor<br> incididunt ut labore et
+                  </p>
+                  <button class="milk-card__btn"></button>
+               </div>
+            </div>
          </div>
+         <ul class="data__list">
+            <li class="data-first__item">
+               <span class="data-item__ellipse"></span>
+               <p class="data-item__number">16</p>
+               <p class="data-item__text">cafes</p>
+            </li>
+            <li class="data-second__item">
+               <span class="data-item__ellipse"></span>
+               <p class="data-item__number">23</p>
+               <p class="data-item__text">food trucks</p>
+            </li>
+         </ul>
+         <picture class="hero-galochka__img">
+            <source srcset="./images/hero-galochka-768-min.png 1x, ./images/hero-galochka-768@2x-min.png 2x"
+               media="(min-width: 768px)">
+            <source srcset="./images/hero-galochka-1280-min.png 1x, ./images/hero-galochka-1280@2x-min.png 2x"
+               media="(min-width: 1280px)">
+            <img src="" alt="">
+         </picture>
       </div>
    </div>
 </header>
