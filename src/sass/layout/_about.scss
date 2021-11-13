@@ -1,5 +1,5 @@
 .about-section {
-  background-color: #fff5f6;
+  background-color: $accent-bg-color;
   position: relative;
   background-image: url(../images/milk-bg-480.png);
 
@@ -43,7 +43,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #d41443;
+  color: $dark-accent-color;
 
   margin-bottom: 26px;
 }
@@ -59,7 +59,7 @@
   line-height: 162%;
 
   position: relative;
-  color: #000000;
+  color: $primary-light-text-color;
 
   margin-bottom: 47px;
 }
@@ -71,7 +71,7 @@
   line-height: 162%;
 
   position: relative;
-  color: #907e82;
+  color: $secondary-dark-text-color;
 
   margin-bottom: 47px;
 }
@@ -79,7 +79,7 @@
 .about-btn {
   width: 176px;
   height: 44px;
-  background-color: #ffffff;
+  background-color: $primary-light-text-color;
   border-radius: 22px;
 
   display: flex;
@@ -88,7 +88,7 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 18px;
-  color: #d41443;
+  $dark-accent-color;
 
   border: none;
 }
