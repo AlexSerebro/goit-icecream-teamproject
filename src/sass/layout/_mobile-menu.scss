@@ -105,9 +105,9 @@
   &:focus {
     background-color: $light-hover-color;
   }
+}
 
-  &::after {
-    content: '\02C3';
-    margin-left: 30px;
-  }
+.menu-btn__svg {
+  margin-left: 15px;
+  fill: $dark-accent-color;
 }
