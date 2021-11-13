@@ -155,3 +155,13 @@ p {
     margin-bottom: 30px;
   }
 }
+
+.btn_icon_arrow {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background-image: url(/images/icon-arrow.png);
+}
