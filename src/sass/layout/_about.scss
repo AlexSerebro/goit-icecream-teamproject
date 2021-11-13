@@ -7,6 +7,10 @@
   background-position: center 86%;
   padding-top: 125px;
   padding-bottom: 39px;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/milk-bg-480@2x.png);
+  }
 }
 
 .about-container {
@@ -59,7 +63,7 @@
   line-height: 162%;
 
   position: relative;
-  color: $primary-light-text-color;
+  color: $primary-dark-text-color;
 
   margin-bottom: 47px;
 }
@@ -88,13 +92,21 @@
   font-weight: bold;
   font-size: 14px;
   line-height: 18px;
-  
+  color: $dark-accent-color;
+
 
   border: none;
+
+  transition: all 0.5s;
+  &:hover {
+    background-color: $light-hover-color;
+  }
 }
 
 .about-btn-icon {
   width: 7px;
   height: 11px;
   margin-left: 14px;
+
+  fill: $dark-accent-color;
 }
