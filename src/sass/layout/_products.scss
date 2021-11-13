@@ -1,17 +1,3 @@
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-p {
-  margin: 0;
-}
-
 .products {
   padding-top: 121px;
   padding-bottom: 98px;
@@ -50,9 +36,6 @@ p {
 }
 
 .products-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   margin-bottom: -130px;
 
   &__item {
