@@ -8,9 +8,17 @@
   margin-right: auto;
   padding-left: 57px;
   padding-right: 66px;
+  position: relative;
   &::before {
-    content: close-quote;
-    background-color: #e1e1e1;
+    content: '';
+    position: absolute;
+    display: inline-block;
+    width: 54px;
+    height: 48px;
+    background-repeat: no-repeat;
+    background-image: url(/images/qooter.svg);
+    top: 35%;
+    left: 22%;
   }
 }
 .customer__foto {
@@ -26,6 +34,7 @@
   margin-top: 72px;
   margin-left: auto;
   margin-right: auto;
+  z-index: 100;
 
   @include font(DM Sans, 12px, 500, 2.55, 0.03em, $primary-dark-text-color);
   width: 157px;
@@ -39,11 +48,6 @@
     bottom: -50px;
     left: 40%;
     color: $dark-hover-color;
-  }
-  &::before {
-    position: absolute;
-    content: '';
-    font-size: 54px;
   }
 }
 
