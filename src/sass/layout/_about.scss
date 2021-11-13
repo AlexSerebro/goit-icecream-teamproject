@@ -1,0 +1,100 @@
+.about-section {
+  background-color: #fff5f6;
+  position: relative;
+  background-image: url(../images/milk-bg-480.png);
+
+  background-repeat: no-repeat;
+  background-position: center 86%;
+  padding-top: 125px;
+  padding-bottom: 39px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-title-label {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: calc(21 / 18);
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #ffa5ba;
+
+  margin-bottom: 15px;
+}
+
+.about-title {
+  max-width: 200px;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 34px;
+  line-height: calc(39 / 34);
+
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: #d41443;
+
+  margin-bottom: 26px;
+}
+
+.about-img {
+  margin-bottom: 46px;
+}
+
+.about-text-1 {
+  max-width: 220px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+
+  position: relative;
+  color: #000000;
+
+  margin-bottom: 47px;
+}
+
+.about-text-2 {
+  max-width: 220px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 162%;
+
+  position: relative;
+  color: #907e82;
+
+  margin-bottom: 47px;
+}
+
+.about-btn {
+  width: 176px;
+  height: 44px;
+  background-color: #ffffff;
+  border-radius: 22px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #d41443;
+
+  border: none;
+}
+
+.about-btn-icon {
+  width: 7px;
+  height: 11px;
+  margin-left: 14px;
+}
