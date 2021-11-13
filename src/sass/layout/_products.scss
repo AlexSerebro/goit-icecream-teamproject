@@ -62,6 +62,10 @@ p {
     position: relative;
     margin-bottom: 130px;
 
+    @media screen and (max-width: 767px) {
+      margin: 130px auto;
+    }
+
     &_pink {
       background: #ffb8ca;
       &::before {
