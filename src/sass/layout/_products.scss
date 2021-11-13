@@ -167,5 +167,10 @@ p {
   border: none;
   padding: 0;
   cursor: pointer;
-  background-image: url(/images/icon-arrow.png);
+  background-image: url(/images/button-arrow-480.png);
+  background-size: contain;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(/images/button-arrow-480@2x.png);
+  }
 }
