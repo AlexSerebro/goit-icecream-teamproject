@@ -1,5 +1,5 @@
 .about-advantages {
-  background-color: var(--accent-bg-color);
+  background-color: $accent-bg-color;
 }
 
 .advantage {
@@ -25,7 +25,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
   margin-bottom: 20px;
-  color: var(--dark-accent-color);
+  color: $dark-accent-color;
 
 }
 
@@ -39,5 +39,5 @@
   overflow-wrap: break-word;
 
 
-color: var(--primary-dark-text-color);
+color: $primary-dark-text-color;
 }
