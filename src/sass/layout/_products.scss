@@ -1,6 +1,5 @@
 .products {
-  padding-top: 121px;
-  padding-bottom: 98px;
+  @include section(121px, 98px);
   background-color: var(--light-bg-color);
   text-align: center;
 }
@@ -13,21 +12,12 @@
 
 .pre-title {
   margin-bottom: 15px;
-  color: #ffa5ba;
-  font-family: Titan One;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: calc(21 / 18);
+  @include font(Titan One, 18px, 400, 1.16, inherit, var(--light-accent-color));
 }
 
 .section-title {
   margin-bottom: 144px;
-  font-family: Titan One;
-  font-weight: 400;
-  font-size: 34px;
-  line-height: calc (39 / 34);
-  letter-spacing: 0.04em;
-  color: #d41443;
+  @include font(Titan One, 34px, 400, 1.14, 0.04em, var(--dark-accent-color));
 }
 
 .products-list {
@@ -45,7 +35,7 @@
     }
 
     &_pink {
-      background: #ffb8ca;
+      background: var(--hero-bg-color);
       &::before {
         content: '';
         position: absolute;
@@ -65,7 +55,7 @@
     }
 
     &_brown {
-      background: #f0d1a5;
+      background: var(--first-additional-accent-color);
       &::before {
         content: '';
         position: absolute;
@@ -85,7 +75,7 @@
     }
 
     &_green {
-      background: #c2e297;
+      background: var(--second-additional-accent-color);
       &::before {
         content: '';
         position: absolute;
@@ -105,13 +95,8 @@
     }
   }
   &__title {
-    font-family: Titan One;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: calc(23 / 20);
-    letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: var(--light-bg-color);
+    @include font(Titan One, 20px, 400, 1.15, 0.04em, var(--light-bg-color));
 
     &::after {
       content: '\00B7\00B7\00B7';
@@ -128,13 +113,8 @@
   }
 
   &__description {
-    font-family: DM Sans;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: calc(21 / 14);
-    letter-spacing: 0.04em;
-    color: var(--light-bg-color);
     margin-bottom: 30px;
+    @include font(DM Sans, 14px, 700, 1.52, 0.04em, var(--light-bg-color));
   }
 }
 
