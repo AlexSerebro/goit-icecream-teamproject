@@ -1,9 +1,13 @@
 .about-advantages {
   background-color: var(--accent-bg-color);
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 97px;
 }
 
 .advantage {
   display: block;
+
 }
 
 .advantages__list {
@@ -26,7 +30,6 @@
   text-transform: uppercase;
   margin-bottom: 20px;
   color: var(--dark-accent-color);
-
 }
 
 .advanteges__text {
@@ -35,9 +38,34 @@
   font-weight: bold;
   font-size: 12px;
   line-height: 1.70;
-  padding-right: 120px;
   overflow-wrap: break-word;
+  max-width: 230px;
+  color: var(--primary-dark-text-color);
+}
 
+.advantages__icon-721::before {
+  content: '';
+  width: 33px;
+  height: 50px;
+  display: flex;
+  background-image: url(/images/icon-bucket-of-milk-480.png);
+  margin-bottom: 16px;
+}
 
-color: var(--primary-dark-text-color);
+.advantages__icon-16kg::before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  display: flex;
+  background-image: url(/images/icon-buсket-of-apples-480.png);
+  margin-bottom: 16px;
+}
+
+.advantages__icon-84::before {
+  content: '';
+  width: 44px;
+  height: 50px;
+  display: flex;
+  background-image: url(/images/icon-ice-cream-480.png);
+  margin-bottom: 16px;
 }
