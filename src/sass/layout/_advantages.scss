@@ -1,9 +1,6 @@
 .about-advantages {
   background-color: $accent-bg-color;
-  margin-left: auto;
-  margin-right: auto;
   padding-bottom: 97px;
-
 }
 
 .advantage {
@@ -50,18 +47,26 @@
   width: 33px;
   height: 50px;
   display: flex;
-  background-image: url(/images/icon-bucket-of-milk-480.png);
+  background-size: cover;
   margin-bottom: 16px;
-}
+    background-image: url(/images/icon-bucket-of-milk-480.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/icon-bucket-of-milk-480@2x.png);
+    }
+  }
 
 .advantages__icon-16kg::before {
   content: '';
   width: 50px;
   height: 50px;
   display: flex;
-  background-image: url(/images/icon-buсket-of-apples-480.png);
+  background-size: cover;
   margin-bottom: 16px;
-}
+    background-image: url(/images/icon-buсket-of-apples-480.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/icon-buсket-of-apples-480@2x.png);
+    }
+  }
 
 
 .advantages__icon-84::before {
@@ -69,6 +74,10 @@
   width: 44px;
   height: 50px;
   display: flex;
-  background-image: url(/images/icon-ice-cream-480.png);
+  background-size: cover;
   margin-bottom: 16px;
-}
+    background-image: url(/images/icon-ice-cream-480.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/icon-ice-cream-480@2x.png);
+    }
+  }
