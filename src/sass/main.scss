@@ -4,16 +4,17 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-
+@import './base/common';
 @import './utils/breakpoints';
+@import './utils/reset';
 @import './utils/visual-hiden';
 @import './utils/global-set';
 @import './utils/mixins';
 @import './utils/variables';
 
 @import './components/modal';
-
 @import './layout/header';
+@import './layout/mobile-menu';
 @import './layout/about';
 @import './layout/advantages';
 @import './layout/contacts';
