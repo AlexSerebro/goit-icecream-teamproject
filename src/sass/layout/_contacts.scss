@@ -230,7 +230,7 @@
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
-    .modal {
+    .contacts-modal {
       transform: scale(2) rotate(360deg);
       background-color: $light-accent-color;
     }
