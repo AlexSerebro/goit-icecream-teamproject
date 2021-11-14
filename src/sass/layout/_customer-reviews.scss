@@ -23,6 +23,8 @@
   @include section(80px, 170px);
   background-color: $light-bg-color;
   text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .customer__foto {
@@ -35,8 +37,8 @@
 .customer__bactext {
   background-color: #fafafa;
   min-width: 280px;
-  padding-left: 80px;
-  padding-right: 80px;
+  padding-left: 57px;
+  padding-right: 66px;
   padding-top: 43px;
   padding-bottom: 20px;
   max-width: 480px;
