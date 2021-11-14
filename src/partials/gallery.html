@@ -11,181 +11,100 @@
   </div>
 </section> -->
 
-<!-- <section class="gallery">
-  <div class="gallery__container">
-    <h2 class="visually__hidden">Gallery</h2>
-    <p><button class="stamp-button">Toggle stamp</button></p>
-    <div class="grid" data-masonry='{ "itemSelector": ".grid-item", "columnWidth": 14% }'>
-      <div class="stamp stamp1"></div>
-      <div class="stamp stamp2"></div>
-      <div class="grid-item grid-item--height2">
-        <img
-          src="/images/gallery-img-4-1280.jpg"
-          alt="Set of ice-cream photos"
-          width="40px"
-          height="40px"
-        />
-      </div>
-      <div class="grid-item grid-item--height3">
-        <img
-          src="/images/gallery-img-4-1280.jpg"
-          alt="Set of ice-cream photos"
-          width="40px"
-          height="40px"
-        />
-      </div>
-      <div class="grid-item grid-item--width2 grid-item--height4">
-        <img
-          src="/images/gallery-img-4-1280.jpg"
-          alt="Set of ice-cream photos"
-          width="80px"
-          height="80px"
-        />
-      </div>
-      <div class="grid-item persent-size">
-        <img
-          src="/images/gallery-img-4-1280.jpg"
-          alt="Set of ice-cream photos"
-          width="40px"
-          height="40px"
-        />
-      </div>
-      <div class="grid-item persent-size">
-        <img
-          src="/images/gallery-img-4-1280.jpg"
-          alt="Set of ice-cream photos"
-          width="40px"
-          height="40px"
-        />
-      </div>
-      <div class="grid-item persent-size">
-        <img
-          src="/images/gallery-img-4-1280.jpg"
-          alt="Set of ice-cream photos"
-          width="40px"
-          height="40px"
-        />
-      </div>
-      <div class="grid-item grid-item--height3">
-        <img
-          src="/images/gallery-img-4-1280.jpg"
-          alt="Set of ice-cream photos"
-          width="40px"
-          height="40px"
-        />
-      </div>
-      <div class="grid-item persent-size">
-        <img
-          src="/images/gallery-img-4-1280.jpg"
-          alt="Set of ice-cream photos"
-          width="40px"
-          height="40px"
-        />
-      </div>
-      <div class="grid-item persent-size">
-        <img
-          src="/images/gallery-img-4-1280.jpg"
-          alt="Set of ice-cream photos"
-          width="40x"
-          height="40px"
-        />
-      </div>
-      <div class="grid-item persent-size">
-        <img
-          src="/images/gallery-img-4-1280.jpg"
-          alt="Set of ice-cream photos"
-          width="40px"
-          height="40px"
-        />
-      </div>
-    </div>
-  </div>
-</section> -->
-
 <section class="gallery">
   <div class="gallery__container">
     <h2 class="visually__hidden">Gallery</h2>
-    <div class="gallery__grid">
-      <div class="gallery__grid-item gallery__grid-item_1">
-        <img
-          src="/images/gallery-img-4-1280.jpg"
-          alt="Set of ice-cream photos"
-          width="40px"
-          height="40px"
-        />
-      </div>
-      <div class="gallery__grid-item gallery__grid-item_2">
-        <img
-          src="/images/gallery-img-4-1280.jpg"
-          alt="Set of ice-cream photos"
-          width="40px"
-          height="40px"
-        />
-      </div>
-      <div class="gallery__grid-item gallery__grid-item_3">
-        <img
-          src="/images/gallery-img-4-1280.jpg"
-          alt="Set of ice-cream photos"
-          width="80px"
-          height="80px"
-        />
-      </div>
-      <div class="gallery__grid-item gallery__grid-item_4">
-        <img
-          src="/images/gallery-img-4-1280.jpg"
-          alt="Set of ice-cream photos"
-          width="40px"
-          height="40px"
-        />
-      </div>
-      <div class="gallery__grid-item gallery__grid-item_5">
-        <img
-          src="/images/gallery-img-4-1280.jpg"
-          alt="Set of ice-cream photos"
-          width="40px"
-          height="40px"
-        />
-      </div>
-      <div class="gallery__grid-item gallery__grid-item_6">
-        <img
-          src="/images/gallery-img-4-1280.jpg"
-          alt="Set of ice-cream photos"
-          width="40px"
-          height="40px"
-        />
-      </div>
-      <div class="gallery__grid-item gallery__grid-item_7">
-        <img
-          src="/images/gallery-img-4-1280.jpg"
-          alt="Set of ice-cream photos"
-          width="40px"
-          height="40px"
-        />
-      </div>
-      <div class="gallery__grid-item gallery__grid-item_8">
-        <img
-          src="/images/gallery-img-4-1280.jpg"
-          alt="Set of ice-cream photos"
-          width="40px"
-          height="40px"
-        />
-      </div>
-      <div class="gallery__grid-item gallery__grid-item_9">
-        <img
-          src="/images/gallery-img-4-1280.jpg"
-          alt="Set of ice-cream photos"
-          width="40x"
-          height="40px"
-        />
-      </div>
-      <div class="gallery__grid-item gallery__grid-item_10">
-        <img
-          src="/images/gallery-img-4-1280.jpg"
-          alt="Set of ice-cream photos"
-          width="40px"
-          height="40px"
-        />
-      </div>
-    </div>
+    <ul class="gallery__grid">
+      <li class="gallery__grid-item gallery__grid-item_1">
+        <picture>
+          <source
+            srcset="/images/gallery-img-4-1280.jpg 1x, /images/gallery-img-4-1280@2x.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img src="/images/gallery-img-4-1280.jpg" alt="ice-cream photo" class="gallery__img" />
+        </picture>
+      </li>
+      <li class="gallery__grid-item gallery__grid-item_2">
+        <picture>
+          <source
+            srcset="/images/gallery-img-4-1280.jpg 1x, /images/gallery-img-4-1280@2x.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img src="/images/gallery-img-4-1280.jpg" alt="ice-cream photo" class="gallery__img" />
+        </picture>
+      </li>
+      <li class="gallery__grid-item gallery__grid-item_3">
+        <picture>
+          <source
+            srcset="/images/gallery-img-4-1280.jpg 1x, /images/gallery-img-4-1280@2x.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img src="/images/gallery-img-4-1280.jpg" alt="ice-cream photo" class="gallery__img" />
+        </picture>
+      </li>
+      <li class="gallery__grid-item gallery__grid-item_4">
+        <picture>
+          <source
+            srcset="/images/gallery-img-4-1280.jpg 1x, /images/gallery-img-4-1280@2x.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img src="/images/gallery-img-4-1280.jpg" alt="ice-cream photo" class="gallery__img" />
+        </picture>
+      </li>
+      <li class="gallery__grid-item gallery__grid-item_5">
+        <picture>
+          <source
+            srcset="/images/gallery-img-4-1280.jpg 1x, /images/gallery-img-4-1280@2x.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img src="/images/gallery-img-4-1280.jpg" alt="ice-cream photo" class="gallery__img" />
+        </picture>
+      </li>
+      <li class="gallery__grid-item gallery__grid-item_6">
+        <picture>
+          <source
+            srcset="/images/gallery-img-4-1280.jpg 1x, /images/gallery-img-4-1280@2x.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img src="/images/gallery-img-4-1280.jpg" alt="ice-cream photo" class="gallery__img" />
+        </picture>
+      </li>
+      <li class="gallery__grid-item gallery__grid-item_7">
+        <picture>
+          <source
+            srcset="/images/gallery-img-4-1280.jpg 1x, /images/gallery-img-4-1280@2x.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img src="/images/gallery-img-4-1280.jpg" alt="ice-cream photo" class="gallery__img" />
+        </picture>
+      </li>
+      <li class="gallery__grid-item gallery__grid-item_8">
+        <picture>
+          <source
+            srcset="/images/gallery-img-4-1280.jpg 1x, /images/gallery-img-4-1280@2x.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img src="/images/gallery-img-4-1280.jpg" alt="ice-cream photo" class="gallery__img" />
+        </picture>
+      </li>
+      <li class="gallery__grid-item gallery__grid-item_9">
+        <picture>
+          <source
+            srcset="/images/gallery-img-4-1280.jpg 1x, /images/gallery-img-4-1280@2x.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img src="/images/gallery-img-4-1280.jpg" alt="ice-cream photo" class="gallery__img" />
+        </picture>
+      </li>
+      <li class="gallery__grid-item gallery__grid-item_10">
+        <picture>
+          <source
+            srcset="/images/gallery-img-4-1280.jpg 1x, /images/gallery-img-4-1280@2x.jpg 2x"
+            media="(max-width: 767px)"
+          />
+          <img src="/images/gallery-img-4-1280.jpg" alt="ice-cream photo" class="gallery__img" />
+        </picture>
+      </li>
+    </ul>
   </div>
 </section>
