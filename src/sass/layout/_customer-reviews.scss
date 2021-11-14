@@ -49,8 +49,7 @@
   position: relative;
   text-align: center;
   align-items: center;
-  z-index: 100;
-
+  z-index: 1;
   @include font(DM Sans, 12px, 500, 2.55, 0.03em, $primary-dark-text-color);
 
   background-image: repeating-linear-gradient(180deg, transparent, transparent 29px, #e1e1e1 30px);
@@ -72,7 +71,7 @@
     background-repeat: no-repeat;
     background-image: url(/images/qooter.svg);
     transform: translate(-50%, -30%);
-    z-index: 1;
+    z-index: -1;
   }
 }
 
