@@ -104,10 +104,6 @@
   left: 81px;
 
   animation: up 2s;
-  animation-name: left-right;
-  animation-duration: 3s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
 
   @media screen and (min-width: $tablet) {
     top: 38px;
@@ -308,6 +304,7 @@
     z-index: 3;
     transform-origin: 0 100%;
     transform: rotate(90deg);
+
     animation-name: galochka;
     animation-delay: 1300ms;
     animation-duration: 1s;
