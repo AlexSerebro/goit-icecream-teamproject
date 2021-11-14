@@ -1,30 +1,17 @@
-// .customer {
-//   padding-top: 82px;
-//   padding-bottom: 86px;
-//   width: 280px;
-//   text-align: center;
-//   align-items: center;
-//   margin-left: auto;
-//   margin-right: auto;
-//   position: relative;
-//   &::before {
-//     content: '';
-//     position: absolute;
-//     display: inline-block;
-//     width: 54px;
-//     height: 48px;
-//     background-repeat: no-repeat;
-//     background-image: url(/images/qooter.svg);
-//     top: 30.5%;
-//     left: 22%;
-//   }
-// }
 .customer {
   @include section(80px, 170px);
   background-color: $light-bg-color;
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
+  max-width: $mobile;
+  margin-left: auto;
+  margin-right: auto;
+  // @media screen and (min-width: $tablet) {
+  //   @include section(121px, 197px);
+  //   padding-left: 74px;
+  //   padding-right: 74px;
+  }
 }
 
 .customer__foto {
@@ -33,6 +20,9 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 29px;
+  // @media screen and (min-width: $tablet) {
+  //   margin-bottom: 19px;
+  // }
 }
 .customer__bactext {
   background-color: #fafafa;
@@ -41,7 +31,7 @@
   padding-right: 66px;
   padding-top: 43px;
   padding-bottom: 20px;
-  max-width: 480px;
+
   align-items: center;
   text-align: center;
   margin-left: auto;
