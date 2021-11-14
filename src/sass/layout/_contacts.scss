@@ -4,12 +4,28 @@
   background-repeat: no-repeat;
   background-size: contain;
   background-image: linear-gradient(to bottom, #ffffff 5%, #ffffff 0, #fff5f6 0, #fff5f6 0);
+  @media screen and(min-width:768px) {
+    background-image: linear-gradient(
+      to bottom,
+      #ffffff 13%,
+      #ffffff 13%,
+      #fff5f6 13%,
+      #fff5f6 13%
+    );
+  }
 }
 .contacts {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 54px;
+
+  @media screen and(min-width:768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 81px;
+  }
 }
 .contacts-item {
   width: 220px;
@@ -17,10 +33,24 @@
   border-radius: 24px;
   margin-bottom: 20px;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+
+  @media screen and(max-width: 1279px) {
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media screen and(min-width: 768px) {
+      flex-basis: calc(100% / 3 - 20px);
+      margin: 10px;
+    }
+  }
 }
 
 .contacts-box {
   padding: 43px 21px 43px 20px;
+  @media screen and(min-width: 768px) {
+    padding: 50px 31px 50px 32px;
+  }
 }
 .contacts-item__title {
   @include font(DM Sans, 12px, 500, 1.86, 0.04em, $primary-light-text-color);
@@ -35,21 +65,40 @@
   margin-bottom: 25px;
   width: 80px;
   height: 16px;
+  @media screen and(min-width: 768px) {
+    @include font(DM Sans, 16px, 500, 1.86, 0.04em, $primary-light-text-color);
+    margin-bottom: 30px;
+    border-radius: 6px;
+    width: 73px;
+    height: 28px;
+  }
 }
 
 .contacts-item__title_green {
   background-color: $second-additional-accent-color;
   width: 130px;
   height: 16px;
+  @media screen and(min-width: 768px) {
+    width: 138px;
+    height: 28px;
+  }
 }
 
 .contacts-item__city {
   @include font(DM Sans, 12px, 500, 1.86, 0.04em, $primary-dark-text-color);
   margin-bottom: 10px;
+  @media screen and(min-width: 768px) {
+    @include font(DM Sans, 14px, 500, 1.86, 0.04em, $primary-dark-text-color);
+    margin-bottom: 14px;
+  }
 }
 .contacts-item__text {
   @include font(DM Sans, 12px, 500, 1.5, null, $secondary-dark-text-color);
   margin-bottom: 25px;
+  @media screen and(min-width: 768px) {
+    @include font(DM Sans, 14px, 500, 1.66, null, $secondary-dark-text-color);
+    margin-bottom: 30px;
+  }
 }
 
 .contacts-timetable {
@@ -57,33 +106,57 @@
   border-bottom: 1px solid #e1e1e1;
   border-top: 1px solid #e1e1e1;
   margin-bottom: 25px;
+  @media screen and(min-width: 768px) {
+    padding: 30px 0;
+  }
 }
 .contacts-timetable__days {
   @include font(DM Sans, 12px, 500, 1.86, 0.04em, $primary-dark-text-color);
+  @media screen and(min-width: 768px) {
+    @include font(DM Sans, 14px, 500, 1.86, 0.04em, $primary-dark-text-color);
+  }
 }
 
 .contacts-timetable__time {
-  @include font(DM Sans, 12px, 500, 1.86, 0.04em, $light-accent-color);
+  @include font(DM Sans, 12px, 500, 1.86, null, $light-accent-color);
+  @media screen and(min-width: 768px) {
+    @include font(DM Sans, 14px, 500, 1.86, null, $light-accent-color);
+  }
+}
+
+.working-days:not(:last-child) {
+  margin-bottom: 10px;
+  @media screen and(min-width: 768px) {
+    margin-bottom: 16px;
+  }
 }
 
 .contacts__link {
-  @include font(DM Sans, 12px, 500, 1.5, 0.04em, $secondary-dark-text-color);
+  @include font(DM Sans, 12px, 500, 1.5, null, $secondary-dark-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     color: $light-accent-color;
   }
+  @media screen and(min-width: 768px) {
+    @include font(DM Sans, 14px, 500, 1.83, null, $secondary-dark-text-color);
+  }
 }
 
 .contacts-btn {
   margin: 0 auto;
+  @media screen and(min-width: 768px) {
+    @include flex(flex, center, center, null, null);
+  }
 }
 .contacts-btn__item {
   @include flex(flex, center, center, column, wrap);
   text-align: center;
   margin-bottom: 10px;
-  &:last-child {
-    margin-bottom: 0;
+  @media screen and(max-width: 767px) {
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
 .contacts-btn__item_red {
@@ -100,7 +173,12 @@
   align-items: center;
   text-align: center;
   width: 162px;
+  @media screen and(min-width: 768px) {
+    padding: 12px 30px;
+    width: 191px;
+  }
 }
+
 .contacts-btn__item_white {
   @include font(DM Sans, 16px, 700, 1.3, 0.04em, $dark-accent-color);
   @include flex(flex, center, center, null, null);
@@ -116,6 +194,10 @@
   width: 161px;
   align-items: center;
   text-align: center;
+  @media screen and(min-width: 768px) {
+    padding: 12px 30px;
+    width: 174px;
+  }
 }
 .contacts-btn__icon_red {
   fill: $primary-light-text-color;
