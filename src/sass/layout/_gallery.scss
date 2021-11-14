@@ -20,3 +20,68 @@
     width: 1280px;
   }
 }
+
+.grid {
+  position: relative;
+  max-width: 290px;
+  max-height: 122px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* clearfix */
+.grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+.grid-item {
+  width: 14%;
+  height: 40px;
+  float: left;
+  background: #d26;
+  border: 2px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+}
+
+.grid-item--width2 {
+  width: 28%;
+}
+
+.grid-item--height4 {
+  height: 80px;
+}
+
+.stamp {
+  position: absolute;
+  background: orange;
+  border: 4px dotted black;
+}
+.stamp1 {
+  left: 0;
+  top: 0;
+  width: 40px;
+  height: 40px;
+}
+.stamp2 {
+  left: 42px;
+  top: 0;
+  width: 40px;
+  height: 20px;
+}
+
+.stamp4 {
+  left: 84px;
+  top: 0;
+  width: 40px;
+  height: 20px;
+}
+
+.stamp3 {
+  left: 42px;
+  top: 0;
+  width: 40px;
+  height: 20px;
+}
