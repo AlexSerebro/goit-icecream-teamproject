@@ -47,8 +47,10 @@
                     line-height: 1.15;
                 }
                 @media screen and (min-width: $desctop) {
+                    margin-bottom: 15px;
                     font-size: 30px;
-                    line-height: 1.13;
+                    line-height: 1.14;
+                    letter-spacing: 0.04em;
                 }
             }
             
@@ -61,7 +63,8 @@
                 }
                 @media screen and (min-width: $desctop) {
                     font-size: 58px;
-                    line-height: 1.13;
+                    line-height: 1.14;
+                    letter-spacing: 0.06em;
                 }
             }
             
@@ -75,6 +78,9 @@
             .footer__socials {
                 display: inline-flex;
                 margin-bottom: 46px;
+                @media screen and (min-width: $desctop) {
+                    margin-bottom: 50px;
+                }
             }
             
             .footer__socials-item:not(:last-child) {
