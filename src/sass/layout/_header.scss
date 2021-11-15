@@ -16,6 +16,19 @@
     display: flex;
     padding-top: 37px;
   }
+
+  @media screen and (min-width: $desctop) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.hero-header-container {
+  @media screen and (min-width: 1280px) {
+    padding-left: 46px;
+    padding-right: 46px;
+    margin: 0 auto;
+  }
 }
 
 .header-btn__list {
@@ -33,6 +46,10 @@
 
   @media screen and (min-width: $tablet) {
     margin-right: 30px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    display: none;
   }
 }
 
@@ -55,10 +72,45 @@
   @media screen and (max-width: 767px) {
     display: none;
   }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 18px;
+  }
 }
 
 .logo {
   display: inline-block;
+}
+
+.site-nav {
+  @media screen and (max-width: 1279px) {
+    display: none;
+  }
+}
+
+.site-nav__list {
+  display: flex;
+  @include font(DM Sans, 16px, 400, 1.31, null, $primary-light-text-color);
+  margin-left: 110px;
+}
+.site-nav__item {
+  &:not(:last-child) {
+    margin-right: 35px;
+  }
+}
+
+.site-nav__link {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: inherit;
+  text-decoration: none;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    color: $dark-accent-color;
+  }
 }
 
 .icon-burger {
@@ -92,8 +144,16 @@
   animation: fadein 2s;
 
   @media screen and (min-width: $tablet) {
+    width: 324px;
+    height: 322px;
     top: -60px;
     right: 103px;
+  }
+  @media screen and (min-width: $desctop) {
+    width: 538px;
+    height: 538px;
+    top: -36px;
+    left: 416px;
   }
 }
 
@@ -108,6 +168,11 @@
   @media screen and (min-width: $tablet) {
     top: 38px;
     left: 71px;
+  }
+
+  @media screen and (min-width: $desctop) {
+    top: 64px;
+    left: 119px;
   }
 }
 
@@ -126,6 +191,18 @@
     padding-top: 15px;
     width: 162px;
   }
+
+  @media screen and (min-width: $desctop) {
+    padding-top: 84px;
+    width: 277px;
+  }
+}
+
+.hero-title__container {
+  @media screen and (min-width: $desctop) {
+    margin-left: 69px;
+    width: 100%;
+  }
 }
 
 .hero__title {
@@ -136,9 +213,12 @@
     font-size: 34px;
     line-height: 1;
   }
+  @media screen and (min-width: $desctop) {
+    @include font(null, 58px, null, 1, null, null);
+  }
 }
 
-.hero-title__text {
+.hero-pre__title {
   display: inline-block;
   @include font(Titan One, 26px, 400, 1.15, 0.04em, $primary-light-text-color);
 
@@ -146,21 +226,33 @@
     font-size: 22px;
     line-height: 1.13;
   }
+
+  @media screen and (min-width: $desctop) {
+    @include font(null, 38px, null, 1.15, null, null);
+  }
 }
 
 .hero-button__list {
   display: flex;
   margin-top: 20px;
+  font-size: 8px;
+  line-height: 1.28;
   list-style: none;
+
+  @media screen and (min-width: $desctop) {
+    margin-top: 25px;
+  }
 }
 
 .hero-button__item {
-  font-size: 8px;
-  line-height: 1.28;
-  margin-right: 8px;
   border-radius: 15px;
+  margin-right: 8px;
 
   @include transition(null, null, background-color, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+
+  @media screen and (min-width: $desctop) {
+    border-radius: 30px;
+  }
 
   &:first-child {
     width: 62px;
@@ -172,6 +264,11 @@
     &:focus {
       background-color: $dark-hover-color;
     }
+
+    @media screen and (min-width: $desctop) {
+      width: 104px;
+      height: 40px;
+    }
   }
 
   &:last-child {
@@ -180,7 +277,13 @@
     height: 24px;
     color: $secondary-dark-accent-color;
     background-color: $light-bg-color;
+
+    @media screen and (min-width: $desctop) {
+      width: 138px;
+      height: 40px;
+    }
   }
+
   &:hover,
   &:focus {
     background-color: $light-hover-color;
@@ -190,14 +293,18 @@
 .hero-button__link {
   width: 100%;
   height: 100%;
-  @include flex(flex, center, center, null, null);
-  color: inherit;
   text-decoration: none;
+  color: inherit;
+
+  @include flex(flex, center, center, null, null);
+
+  @media screen and (min-width: $desctop) {
+    font-size: 14px;
+  }
 }
 
 .milk-card {
-  width: 238px;
-  margin-top: 19px;
+  padding-top: 19px;
   display: flex;
   @media screen and (max-width: 767px) {
     display: none;
@@ -205,17 +312,38 @@
   @media screen and (min-width: $tablet) {
     padding-bottom: 28px;
   }
+
+  @media screen and (min-width: $desctop) {
+    padding-top: 56px;
+    padding-bottom: 45px;
+    margin-left: 31px;
+  }
+}
+
+.milk-card__img {
+  min-width: 100%;
 }
 
 .milk-meta {
   display: flex;
   flex-direction: column;
   margin-top: 47px;
+
+  @media screen and (min-width: $desctop) {
+    justify-content: center;
+    margin-left: 30px;
+    @include font(null, 14px, null, 1.42, null, null);
+  }
 }
 
 .milk-card__text {
   width: 114px;
   @include font(DM Sans, 8px, 400, 1.5, null, $primary-light-text-color);
+
+  @media screen and (min-width: $desctop) {
+    width: 200px;
+    @include font(null, 14px, null, 1.42, null, null);
+  }
 }
 
 .milk-card__btn {
@@ -231,11 +359,22 @@
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(/images/hero-arrow-right@2x.png);
   }
+
+  @media screen and (min-width: $desctop) {
+    width: 26px;
+    height: 26px;
+  }
 }
 
 .data__list {
+  margin-top: 12px;
+
   @media screen and (max-width: 767px) {
     display: none;
+  }
+
+  @media screen and (min-width: $desctop) {
+    margin-top: 74px;
   }
 }
 
@@ -245,8 +384,6 @@
 }
 
 .data-first__item {
-  margin-top: 12px;
-
   & .data-item__number {
     text-align: center;
   }
@@ -256,6 +393,11 @@
   margin-top: 13px;
   width: 51px;
   height: 43px;
+
+  @media screen and (min-width: $desctop) {
+    width: 92px;
+    height: 76px;
+  }
 
   & .data-item__number {
     text-align: center;
@@ -274,6 +416,10 @@
   text-align: start;
   @include font(Titan One, 28px, 400, 1.14, 0.04, $secondary-dark-accent-color);
 
+  @media screen and (min-width: $desctop) {
+    @include font(Titan One, 46px, 400, 1.15, null, null);
+  }
+
   &::after {
     content: ' ';
     width: 16px;
@@ -284,12 +430,21 @@
     z-index: -1;
     border-radius: 50%;
     background-color: $light-bg-color;
+
+    @media screen and (min-width: $desctop) {
+      width: 30px;
+      height: 30px;
+    }
   }
 }
 
 .data-item__text {
   text-align: center;
   @include font(DM Sans, 8px, 400, 1.25, null, $primary-light-text-color);
+
+  @media screen and (min-width: $desctop) {
+    @include font(DM Sans, 14px, 400, 1.28, null, null);
+  }
 }
 
 .hero-galochka__img {
