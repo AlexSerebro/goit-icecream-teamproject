@@ -13,6 +13,17 @@
       #fff5f6 13%
     );
   }
+  @media screen and(min-width:1280px) {
+    background-image: url('../images/section-contacts-bg-1280-min.png'),
+      linear-gradient(to bottom, #ffffff 15%, #ffffff 15%, #fff5f6 15%, #fff5f6 15%);
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/section-contacts-bg-1280@2x-min.png'),
+        linear-gradient(to bottom, #ffffff 15%, #ffffff 15%, #fff5f6 15%, #fff5f6 15%);
+    }
+  }
 }
 .contacts {
   display: flex;
@@ -300,6 +311,17 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   @media screen and(min-width:768px) {
     width: 450px;
+  }
+  @media screen and(min-width:768px) {
+    background-image: url('../images/milk-bg-480.png'),
+      linear-gradient(to bottom, #ffffff 9%, #ffffff 9%, #fff5f6 9%, #fff5f6 9%);
+    @media screen and (min-device-pixel-ratio: 2),
+      (-webkit-min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: url('../images/milk-bg-480@2x.png'),
+        linear-gradient(to bottom, #ffffff 9%, #ffffff 9%, #fff5f6 9%, #fff5f6 9%);
+    }
   }
 }
 
