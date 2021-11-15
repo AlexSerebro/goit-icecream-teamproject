@@ -4,14 +4,14 @@
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
-  // max-width: $mobile;
+  max-width: $mobile;
   margin-left: auto;
   margin-right: auto;
   @media screen and (min-width: $tablet) {
     @include section(121px, 166px);
     padding-left: 74px;
     padding-right: 74px;
-    // max-width: $tablet;
+    max-width: $tablet;
   }
 
   @media screen and (min-width: $desctop) {
