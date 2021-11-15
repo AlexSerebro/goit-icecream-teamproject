@@ -1,17 +1,25 @@
 .customer {
-  @include section(80px, 170px);
+  @include section(80px, 128px);
   background-color: $light-bg-color;
   text-align: center;
   padding-left: 20px;
   padding-right: 20px;
-  max-width: $mobile;
+  // max-width: $mobile;
   margin-left: auto;
   margin-right: auto;
-  // @media screen and (min-width: $tablet) {
-  //   @include section(121px, 197px);
-  //   padding-left: 74px;
-  //   padding-right: 74px;
-  // }
+  @media screen and (min-width: $tablet) {
+    @include section(121px, 166px);
+    padding-left: 74px;
+    padding-right: 74px;
+    // max-width: $tablet;
+  }
+
+  @media screen and (min-width: $desctop) {
+    @include section(123px, 179px);
+    padding-left: 74px;
+    padding-right: 74px;
+    max-width: $desctop;
+  }
 }
 
 .customer__foto {
@@ -20,9 +28,12 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 29px;
-  // @media screen and (min-width: $tablet) {
-  //   margin-bottom: 19px;
-  // }
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 19px;
+  }
+  @media screen and (min-width: $desctop) {
+    margin-bottom: 15px;
+  }
 }
 .customer__bactext {
   background-color: #fafafa;
@@ -31,11 +42,28 @@
   padding-right: 66px;
   padding-top: 43px;
   padding-bottom: 20px;
+  margin-bottom: 52px;
 
   align-items: center;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  @media screen and (min-width: $tablet) {
+    min-width: 620px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 47px;
+    padding-bottom: 34px;
+    margin-bottom: 42px;
+  }
+  @media screen and (min-width: $desctop) {
+    min-width: 926px;
+    padding-left: 180px;
+    padding-right: 180px;
+    padding-top: 47px;
+    padding-bottom: 39px;
+    margin-bottom: 34px;
+  }
 }
 .customer__text {
   position: relative;
@@ -43,8 +71,25 @@
   align-items: center;
   z-index: 1;
   @include font(DM Sans, 12px, 500, 2.55, 0.03em, $primary-dark-text-color);
-
   background-image: repeating-linear-gradient(180deg, transparent, transparent 29px, #e1e1e1 30px);
+  @media screen and (min-width: $tablet) {
+    @include font(DM Sans, 14px, 500, 2.16, 0.04em, $primary-dark-text-color);
+    background-image: repeating-linear-gradient(
+      180deg,
+      transparent,
+      transparent 28px,
+      #e1e1e1 29px
+    );
+  }
+  @media screen and (min-width: $desctop) {
+    @include font(DM Sans, 16px, 500, 1.86, 0.04em, $primary-dark-text-color);
+    background-image: repeating-linear-gradient(
+      180deg,
+      transparent,
+      transparent 26px,
+      #e1e1e1 27px
+    );
+  }
 
   &::after {
     position: absolute;
@@ -68,26 +113,13 @@
 }
 
 .customer__address {
-  margin-top: 72px;
   @include font(DM Sans, 14px, 500, 1.86, 0.04em, $primary-dark-text-color);
-}
-.marker__list {
-  margin-top: 30px;
-}
-.marker__item {
-  width: 12px;
-  height: 12px;
-  & + & {
-    margin-left: 10px;
+  @media screen and (min-width: $tablet) {
+    @include font(DM Sans, 16px, 500, 2.16, 0.04em, $primary-dark-text-color);
   }
-}
-.marker__list {
-  display: flex;
-  justify-content: center;
-}
-.marker__icon {
-  width: 12px;
-  height: 12px;
+  @media screen and (min-width: $desctop) {
+    @include font(DM Sans, 20px, 500, 1.86, 0.04em, $primary-dark-text-color);
+  }
 }
 
 // .swiper {
@@ -97,7 +129,13 @@
 
 .swiper-pagination {
   position: absolute;
-  top: 80%;
+  top: 85%;
+  @media screen and (min-width: $tablet) {
+    top: 77%;
+  }
+  @media screen and (min-width: $desctop) {
+    top: 75%;
+  }
 }
 
 .swiper-pagination-bullet-active {
@@ -116,5 +154,11 @@
   height: 13px;
   z-index: 25;
   background-color: #fff;
+  background-position: center;
+  background-size: contain;
   background-repeat: no-repeat;
+}
+
+.swiper-pagination-bullets {
+  margin-right: 18px;
 }
