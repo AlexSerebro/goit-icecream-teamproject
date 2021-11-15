@@ -20,7 +20,10 @@
     margin-bottom: 0px;
   }
   @media screen and (min-width: $tablet) {
-    margin-right: 60px;
+    margin-bottom: 0px;
+    &:not(:last-child) {
+      margin-right: 60px;
+    }
   }
 }
 
