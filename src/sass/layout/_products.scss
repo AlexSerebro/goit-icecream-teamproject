@@ -2,6 +2,12 @@
   @include section(121px, 98px);
   background-color: $light-bg-color;
   text-align: center;
+  @media screen and (min-width: $tablet) {
+    @include section(122px, 112px);
+  }
+  @media screen and (min-width: $desctop) {
+    @include section(127px, 119px);
+  }
 }
 
 .pre-title,
@@ -13,26 +19,61 @@
 .pre-title {
   margin-bottom: 15px;
   @include font(Titan One, 18px, 400, 1.16, inherit, $light-accent-color);
+  @media screen and (min-width: $tablet) {
+    @include font(Titan One, 26px, 400, 1.15, inherit, $light-accent-color);
+  }
+  @media screen and (min-width: $desctop) {
+    @include font(Titan One, 30px, 400, 1.13, 0.04em, $light-accent-color);
+  }
 }
 
 .section-title {
   margin-bottom: 144px;
   @include font(Titan One, 34px, 400, 1.14, 0.04em, $dark-accent-color);
+  @media screen and (min-width: $tablet) {
+    @include font(Titan One, 48px, 400, 1.14, 0.04em, $dark-accent-color);
+    margin-bottom: 150px;
+  }
+  @media screen and (min-width: $desctop) {
+    @include font(Titan One, 58px, 400, 1.14, 0.06em, $dark-accent-color);
+    margin-bottom: 259px;
+  }
 }
 
 .products-list {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+
   &__item {
     border-radius: 24px;
     padding: 161px 40px 41px 40px;
-    max-width: 480px;
     position: relative;
-    &:not(:last-child) {
-      margin-bottom: 130px;
-    }
 
     @media screen and (max-width: 767px) {
       margin-left: auto;
       margin-right: auto;
+      max-width: 480px;
+      &:not(:last-child) {
+        margin-bottom: 130px;
+      }
+    }
+
+    @media screen and (min-width: $tablet) {
+      padding: 152px 11px 40px 11px;
+      flex-basis: calc((100% / 3) - 10px);
+      &:not(:last-child) {
+        margin-right: 20px;
+        margin-bottom: 0;
+      }
+    }
+
+    @media screen and (min-width: $desctop) {
+      padding: 163px 44px 50px 44px;
+      flex-basis: calc((100% / 3) - 15px);
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
     }
 
     &_green::before,
@@ -43,11 +84,21 @@
       z-index: 9;
       display: block;
       width: 249px;
+      height: 252px;
       top: 0;
       left: 50%;
       transform: translate(-50%, -113px);
-      height: 252px;
       background-size: contain;
+      @media screen and (min-width: $tablet) {
+        width: 220px;
+        height: 224px;
+        transform: translate(-50%, -102px);
+      }
+      @media screen and (min-width: $desctop) {
+        width: 335px;
+        height: 335px;
+        transform: translate(-50%, -210px);
+      }
     }
 
     &_pink {
@@ -56,6 +107,20 @@
         background-image: url(/images/product1-480.png);
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
           background-image: url(/images/product1-480@2x.png);
+        }
+
+        @media screen and (min-width: $tablet) {
+          background-image: url(/images/product1-768-min.png);
+          @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(/images/product1-768@2x-min.png);
+          }
+        }
+
+        @media screen and (min-width: $desctop) {
+          background-image: url(/images/product1-1280-min.png);
+          @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(/images/product1-1280@2x-min.png);
+          }
         }
       }
     }
@@ -67,6 +132,20 @@
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
           background-image: url(/images/product3-480@2x.png);
         }
+
+        @media screen and (min-width: $tablet) {
+          background-image: url(/images/product3-768-min.png);
+          @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(/images/product3-768@2x-min.png);
+          }
+        }
+
+        @media screen and (min-width: $desctop) {
+          background-image: url(/images/product3-1280-min.png);
+          @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(/images/product3-1280@2x-min.png);
+          }
+        }
       }
     }
 
@@ -77,6 +156,19 @@
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
           background-image: url(/images/product2-480@2x.png);
         }
+        @media screen and (min-width: $tablet) {
+          background-image: url(/images/product2-768-min.png);
+          @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(/images/product2-768@2x-min.png);
+          }
+        }
+
+        @media screen and (min-width: $desctop) {
+          background-image: url(/images/product2-1280-min.png);
+          @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(/images/product2-1280@2x-min.png);
+          }
+        }
       }
     }
   }
@@ -84,6 +176,9 @@
   &__title {
     text-transform: uppercase;
     @include font(Titan One, 20px, 400, 1.15, 0.04em, $light-bg-color);
+    @media screen and (min-width: $desctop) {
+      @include font(Titan One, 30px, 400, 1.13, 0.04em, $light-bg-color);
+    }
 
     &::after {
       content: '\00B7\00B7\00B7';
@@ -95,13 +190,25 @@
       font-family: DM Sans;
       font-weight: 900;
       margin-bottom: 30px;
-      margin-top: 24px;
+      margin-top: 30px;
+      @media screen and (min-width: $desctop) {
+        margin-bottom: 32px;
+        margin-top: 32px;
+      }
     }
   }
 
   &__description {
     margin-bottom: 30px;
     @include font(DM Sans, 14px, 700, 1.52, 0.04em, $light-bg-color);
+    @media screen and (min-width: $tablet) {
+      @include font(DM Sans, 14px, 700, 1.76, 0.04em, $light-bg-color);
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: $desctop) {
+      @include font(DM Sans, 16px, 700, 1.72, 0.04em, $light-bg-color);
+      margin-bottom: 62px;
+    }
   }
 }
 
@@ -117,5 +224,19 @@
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(/images/button-arrow-480@2x.png);
+  }
+
+  @media screen and (min-width: $tablet) {
+    background-image: url(/images/button-arrow-768.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/button-arrow-768@2x.png);
+    }
+  }
+
+  @media screen and (min-width: $desctop) {
+    background-image: url(/images/button-arrow-1280.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(/images/button-arrow-1280@2x.png);
+    }
   }
 }
