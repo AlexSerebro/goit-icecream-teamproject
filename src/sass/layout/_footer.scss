@@ -1,12 +1,26 @@
             .footer {
                 background-color: $accent-bg-color;
                 padding-top: 113px;
+                @media screen and (min-width: $tablet) {
+                    padding-top: 165px;
+                }
+                @media screen and (min-width: $desctop) {
+                    padding-top: 165px;
+                }
             }
             
             .footer__container {
                 display: flex;
                 flex-direction: column;
                 margin-bottom: 43px;
+                @media screen and (min-width: $tablet) {
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin-bottom: 91px;
+                }
+                @media screen and (min-width: $desctop) {
+                    margin-bottom: 97px;
+                }
             }
             
             .footer__text {
@@ -15,6 +29,12 @@
                 text-transform: uppercase;
                 margin-bottom: 43px;
                 @media screen and (max-width: 767.98px) {}
+                @media screen and (min-width: $tablet) {
+                    width: 320px;
+                }
+                @media screen and (min-width: $desctop) {
+                    width: 100%;
+                }
             }
             
             .footer__text-first {
@@ -22,16 +42,34 @@
                 line-height: 1.16;
                 color: $light-accent-color;
                 margin-bottom: 17px;
+                @media screen and (min-width: $tablet) {
+                    font-size: 26px;
+                    line-height: 1.15;
+                }
+                @media screen and (min-width: $desctop) {
+                    font-size: 30px;
+                    line-height: 1.13;
+                }
             }
             
             .footer__text-second {
                 font-size: 34px;
                 line-height: 1.14;
                 color: $dark-accent-color;
+                @media screen and (min-width: $tablet) {
+                    font-size: 48px;
+                }
+                @media screen and (min-width: $desctop) {
+                    font-size: 58px;
+                    line-height: 1.13;
+                }
             }
             
             .footer__contacts {
                 align-self: flex-end;
+                @media screen and (min-width: $tablet) {
+                    align-self: flex-start;
+                }
             }
             
             .footer__socials {
@@ -52,12 +90,11 @@
                 border-radius: 50%;
                 background-color: $light-accent-color;
                 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            }
-            
-            .footer__socials-link:hover,
-            .footer__socials-link:focus {
-                background-color: $dark-accent-color;
-                transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                &:hover,
+                &:focus {
+                    background-color: $dark-accent-color;
+                    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                }
             }
             
             .footer__socials-link:hover .footer__socials-svg {
@@ -96,4 +133,7 @@
                 line-height: 1.52;
                 text-align: center;
                 color: $secondary-dark-text-color;
+                @media screen and (min-width: $tablet) {
+                    width: 276px;
+                }
             }
