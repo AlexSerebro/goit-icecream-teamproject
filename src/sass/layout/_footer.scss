@@ -38,13 +38,14 @@
             }
             
             .footer__text-first {
-                font-size: 18px;
+                font-size: 17px;
                 line-height: 1.16;
                 color: $light-accent-color;
-                margin-bottom: 17px;
+                margin-bottom: 16px;
                 @media screen and (min-width: $tablet) {
                     font-size: 26px;
                     line-height: 1.15;
+                    letter-spacing: 0.04em;
                 }
                 @media screen and (min-width: $desctop) {
                     margin-bottom: 15px;
@@ -57,9 +58,11 @@
             .footer__text-second {
                 font-size: 34px;
                 line-height: 1.14;
+                letter-spacing: 0.04em;
                 color: $dark-accent-color;
                 @media screen and (min-width: $tablet) {
                     font-size: 48px;
+                    letter-spacing: 0.06em;
                 }
                 @media screen and (min-width: $desctop) {
                     font-size: 58px;
@@ -141,5 +144,6 @@
                 color: $secondary-dark-text-color;
                 @media screen and (min-width: $tablet) {
                     width: 276px;
+                    height: 26px;
                 }
             }
