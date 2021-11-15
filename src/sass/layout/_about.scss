@@ -5,25 +5,60 @@
 
   background-repeat: no-repeat;
   background-position: center 86%;
-  background-size: 100%;
   padding-top: 125px;
   padding-bottom: 39px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 130px;
+    padding-bottom: 66px;
+    background-image: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+  }
 
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/milk-bg-480@2x.png);
   }
-  @media screen and (min-width: 480px) {
-    background-size: 480px;
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/milk-bg-1280-min.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/milk-bg-1280@2x-min.png);
+    }
+    background-position: center 110%;
   }
 }
 
-.about-container {
+.about-right-div {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  @media screen and (min-width: 768px) {
+    margin-left: 17px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 74px;
+  }
+}
+
+.about-title-div {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  padding-left: 50px;
-  padding-right: 50px;
+  justify-content: center;
+}
+
+.about-info-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+  }
+  
 }
 
 .about-title-label {
@@ -36,9 +71,26 @@
   text-align: center;
   text-transform: uppercase;
 
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: calc(30 / 26);
+    letter-spacing: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 30px;
+    line-height: calc(34 / 30);
+  }
+
   color: #ffa5ba;
 
   margin-bottom: 15px;
+}
+
+.about-title-div {
+  @media screen and (min-width: 768px) {
+    margin-bottom: 50px;
+  }
 }
 
 .about-title {
@@ -53,17 +105,43 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
+  @media screen and (min-width: 768px) {
+    max-width: none;
+    font-size: 48px;
+    line-height: calc(55 / 48);
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 550px;
+    font-size: 58px;
+    line-height: calc(66 / 58);
+    letter-spacing: 0.06em;
+    margin-bottom: 0px;
+  }
+
   color: $dark-accent-color;
 
   margin-bottom: 26px;
 }
 
 .about-img {
+  display: flex;
   margin-bottom: 46px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: -100px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 0px;
+    margin-bottom: 0;
+  }
 }
 
 .about-text-1 {
-  max-width: 480px;
+  max-width: 220px;
   font-weight: 500;
   font-size: 12px;
   line-height: 162%;
@@ -72,10 +150,29 @@
   color: $primary-dark-text-color;
 
   margin-bottom: 47px;
+
+  @media screen and (min-width: 768px) {
+    max-width: none;
+    font-size: 14px;
+    line-height: calc(25 / 14);
+    width: 340px;
+    height: 79px;
+    margin-bottom: 49px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: none;
+    font-size: 16px;
+    line-height: calc(28 / 16);
+    width: 463px;
+    height: 79px;
+    margin-bottom: 35px;
+    letter-spacing: 0.04em;
+  }
 }
 
 .about-text-2 {
-  max-width: 480px;
+  max-width: 220px;
   font-weight: 500;
   font-size: 12px;
   line-height: 162%;
@@ -84,6 +181,25 @@
   color: $secondary-dark-text-color;
 
   margin-bottom: 47px;
+
+  @media screen and (min-width: 768px) {
+    max-width: none;
+    font-size: 14px;
+    line-height: calc(25 / 14);
+    width: 340px;
+    margin-bottom: 62px;
+    letter-spacing: 0.04em;
+  }
+
+  @media screen and (min-width: 1280px) {
+    max-width: none;
+    font-size: 14px;
+    line-height: calc(27 / 14);
+    width: 463px;
+    margin-bottom: 45px;
+
+    letter-spacing: 0.04em;
+  }
 }
 
 .about-btn {
@@ -97,8 +213,13 @@
   justify-content: center;
   font-weight: bold;
   font-size: 14px;
-  line-height: 18px;
+  line-height: calc(18 / 14);
   color: $dark-accent-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: calc(21 / 16);
+  }
 
   border: none;
 
@@ -110,7 +231,7 @@
 
 .about-btn-icon {
   width: 7px;
-  height: 11px;
+  height: 14px;
   margin-left: 14px;
 
   fill: $dark-accent-color;
