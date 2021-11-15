@@ -11,6 +11,7 @@
   //   @include section(121px, 197px);
   //   padding-left: 74px;
   //   padding-right: 74px;
+  // }
 }
 
 .customer__foto {
@@ -87,4 +88,33 @@
 .marker__icon {
   width: 12px;
   height: 12px;
+}
+
+// .swiper {
+//   width: 600px;
+//   height: 300px;
+// }
+
+.swiper-pagination {
+  position: absolute;
+  top: 80%;
+}
+
+.swiper-pagination-bullet-active {
+  height: 12px;
+  width: 12px;
+}
+
+.swiper-pagination-bullet {
+  height: 12px;
+  width: 12px;
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-image: url(/images/Vector.svg);
+  width: 13px;
+  height: 13px;
+  z-index: 25;
+  background-color: #fff;
+  background-repeat: no-repeat;
 }

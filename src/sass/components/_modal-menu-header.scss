@@ -1,0 +1,217 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+  &.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 40px;
+  width: 100%;
+  overflow-y: scroll;
+
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: #fff;
+
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media screen and (max-width: 479px) {
+    width: 80%;
+  }
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+  }
+}
+
+.modal__btn {
+  // @extend %btn;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  width: 30px;
+  height: 30px;
+  // color: $primary-logo-text;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    // color: $accent-color;
+  }
+}
+
+.modal__icon--close {
+  width: 11px;
+  height: 11px;
+  fill: currentColor;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal__title {
+  margin-bottom: 12px;
+  text-align: center;
+  // @include font(null, 20px, 700, 1.15, null, $primary-color-text);
+}
+
+.modal__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__label {
+  position: relative;
+  margin-bottom: 10px;
+
+  // @include font(null, 12px, null, 1.16, 0.01em, $secondary-color-text);
+
+  &:focus-within .modal__input,
+  &:hover,
+  &:hover .modal__input {
+    // border-color: $accent-color;
+    // fill: $accent-color;
+  }
+}
+
+.modal__input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  margin-top: 4px;
+
+  cursor: pointer;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+}
+
+.modal__icon {
+  position: absolute;
+  top: 27px;
+  left: 12px;
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.textarea__container {
+  margin-bottom: 20px;
+}
+
+.textarea {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  margin-top: 4px;
+  padding: 12px 16px;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  outline: none;
+  // @media screen and (max-width: 479px) {
+  //   height: 53px;
+  // }
+
+  &::placeholder {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+
+    opacity: 1;
+    color: rgba(117, 117, 117, 0.5);
+  }
+  &:focus,
+  &:hover {
+    // border-color: $accent-color;
+  }
+}
+
+.checkbox__label {
+  display: inline-block;
+  margin-bottom: 30px;
+  // @include font(null, 12px, null, 1.71, null, $secondary-color-text);
+  cursor: pointer;
+  text-align: center;
+}
+
+.checkbox__icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 15px;
+  margin-right: 4px;
+  // border: 2px solid $primary-color-text;
+  border-radius: 3px;
+  background-repeat: no-repeat;
+  @include transition(null, border-color, background-color, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
+}
+
+.checkbox:checked + .checkbox__icon {
+  // border-color: $accent-color;
+  // background-color: $accent-color;
+  // background-image: url('../images/icons/icon-check.svg');
+  background-size: contain;
+  background-origin: content-box;
+}
+
+.checkbox__link {
+  // @extend %link;
+  display: inline-block;
+  margin-left: 1px;
+  font-size: 12px;
+  line-height: 1.71;
+  text-decoration-line: underline;
+
+  // color: $accent-color;
+}
+
+.modal__button--submit {
+  // @extend %btn;
+  width: 200px;
+  height: 50px;
+  margin: 0 auto;
+  // @include font(null, 16px, 700, 1.87, 0.06em, $third-color-text);
+  // background: $accent-color;
+  border-radius: 4px;
+
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  @media screen and (max-width: 479px) {
+    width: 150px;
+  }
+}
