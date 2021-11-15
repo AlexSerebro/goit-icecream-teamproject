@@ -10,14 +10,15 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     padding-left: 2px;
-  
-}
+  }
 }
 
 .advantages__list {
   text-align: left;
-  margin-right: 70px;
   margin-bottom: 38px;
+  &:last-child {
+    margin-bottom: 0px;
+  }
   @media screen and (min-width: $tablet) {
     margin-right: 60px;
   }
@@ -45,7 +46,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
-  line-height: 1.70;
+  line-height: 1.7;
   overflow-wrap: break-word;
   max-width: 230px;
   color: $primary-dark-text-color;
@@ -62,14 +63,14 @@
   display: flex;
   background-size: cover;
   margin-bottom: 16px;
-    background-image: url(/images/icon-bucket-of-milk-480.png);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(/images/icon-bucket-of-milk-480@2x.png);
-    }
-    @media screen and (min-width: $tablet) {
-      margin-bottom: 36px;
-    }
+  background-image: url(/images/icon-bucket-of-milk-480.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(/images/icon-bucket-of-milk-480@2x.png);
   }
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 36px;
+  }
+}
 
 .advantages__icon-16kg::before {
   content: '';
@@ -78,15 +79,14 @@
   display: flex;
   background-size: cover;
   margin-bottom: 16px;
-    background-image: url(/images/icon-buсket-of-apples-480.png);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(/images/icon-buсket-of-apples-480@2x.png);
-    }
-    @media screen and (min-width: $tablet) {
-      margin-bottom: 36px;
-    }
+  background-image: url(/images/icon-buсket-of-apples-480.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(/images/icon-buсket-of-apples-480@2x.png);
   }
-
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 36px;
+  }
+}
 
 .advantages__icon-84::before {
   content: '';
@@ -95,11 +95,11 @@
   display: flex;
   background-size: cover;
   margin-bottom: 16px;
-    background-image: url(/images/icon-ice-cream-480.png);
-    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(/images/icon-ice-cream-480@2x.png);
-    }
-    @media screen and (min-width: $tablet) {
-      margin-bottom: 36px;
-    }
+  background-image: url(/images/icon-ice-cream-480.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(/images/icon-ice-cream-480@2x.png);
   }
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 36px;
+  }
+}
