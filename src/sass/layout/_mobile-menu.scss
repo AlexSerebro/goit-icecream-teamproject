@@ -82,6 +82,11 @@
   color: $primary-light-text-color;
   border-top: 1px solid #e18298;
   border-bottom: 1px solid #e18298;
+
+  &:hover,
+  &:focus {
+    color: $dark-accent-color;
+  }
 }
 
 .mobile-menu__link--curent {
