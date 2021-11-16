@@ -242,6 +242,7 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: 41px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   background-image: url(/images/button-arrow-480.png);
   background-size: contain;
 
@@ -263,6 +264,10 @@
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(/images/button-arrow-1280@2x.png);
     }
+  }
+
+  &:hover {
+    transform: scale(1.2) translateX(-50%);
   }
 }
 
