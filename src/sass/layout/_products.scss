@@ -192,10 +192,12 @@
   &__title {
     text-transform: uppercase;
     transition: transform 350ms cubic-bezier(0.4, 0, 0.2, 1);
+    margin-bottom: 30px;
 
     @include font(Titan One, 20px, 400, 1.15, 0.04em, $light-bg-color);
     @media screen and (min-width: $desctop) {
       @include font(Titan One, 30px, 400, 1.13, 0.04em, $light-bg-color);
+      margin-bottom: 32px;
     }
 
     &::after {
@@ -207,10 +209,8 @@
       line-height: 0.2;
       font-family: DM Sans;
       font-weight: 900;
-      margin-bottom: 30px;
       margin-top: 30px;
       @media screen and (min-width: $desctop) {
-        margin-bottom: 32px;
         margin-top: 32px;
       }
     }
