@@ -245,54 +245,18 @@
 }
 
 .hero-button__item {
-  border-radius: 15px;
   margin-right: 8px;
 
   @include transition(null, null, background-color, 250ms, cubic-bezier(0.4, 0, 0.2, 1));
 
   @media screen and (min-width: $desctop) {
-    border-radius: 30px;
-  }
-
-  &:first-child {
-    width: 62px;
-    height: 24px;
-    background-color: $secondary-dark-accent-color;
-    color: $primary-light-text-color;
-
-    &:hover,
-    &:focus {
-      background-color: $dark-hover-color;
-    }
-
-    @media screen and (min-width: $desctop) {
-      width: 104px;
-      height: 40px;
-    }
-  }
-
-  &:last-child {
-    margin-right: 0;
-    width: 83px;
-    height: 24px;
-    color: $secondary-dark-accent-color;
-    background-color: $light-bg-color;
-
-    @media screen and (min-width: $desctop) {
-      width: 138px;
-      height: 40px;
-    }
-  }
-
-  &:hover,
-  &:focus {
-    background-color: $light-hover-color;
   }
 }
 
 .hero-button__link {
   width: 100%;
   height: 100%;
+  border-radius: 30px;
   text-decoration: none;
   color: inherit;
 
@@ -300,6 +264,41 @@
 
   @media screen and (min-width: $desctop) {
     font-size: 14px;
+  }
+}
+
+.hero-button__first--accent {
+  width: 62px;
+  height: 24px;
+  background-color: $secondary-dark-accent-color;
+  color: $primary-light-text-color;
+
+  @media screen and (min-width: $desctop) {
+    width: 104px;
+    height: 40px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $dark-hover-color;
+  }
+}
+
+.hero-button__second--accent {
+  margin-right: 0;
+  width: 83px;
+  height: 24px;
+  color: $secondary-dark-accent-color;
+  background-color: $light-bg-color;
+
+  @media screen and (min-width: $desctop) {
+    width: 138px;
+    height: 40px;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $light-hover-color;
   }
 }
 
