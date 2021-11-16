@@ -45,3 +45,11 @@
     refs.modal.classList.toggle('active');
   }
 })();
+
+/// arrow-top-function
+
+window.addEventListener("load", function(){
+    document.addEventListener("scroll", function(){
+        document.querySelector(".arrow-top").classList[window.pageYOffset > 200 ? "add" : "remove"]("ok");
+    });
+});
