@@ -37,6 +37,8 @@
   top: 0;
   z-index: 10;
 
+  visibility: hidden;
+
   height: 100vh;
   width: 100vw;
   padding-top: 60px;
@@ -63,6 +65,7 @@
 
 .mobile-menu.is-open {
   transform: translateX(0);
+  visibility: visible;
 }
 
 .mobile-menu__link {
