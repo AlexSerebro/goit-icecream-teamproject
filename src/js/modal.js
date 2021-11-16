@@ -30,3 +30,20 @@
     refs.modal.classList.toggle('active');
   }
 })();
+
+(() => {
+  const refs = {
+
+    openModalBtn: document.querySelector('[data-modal-mobile-open]'),
+    closeModalBtn: document.querySelector('[data-modal-mobile-close]'),
+    modal: document.querySelector('[data-mobile]'),
+  };
+
+  refs.openModalBtn.addEventListener('click', toggleModal);
+  refs.closeModalBtn.addEventListener('click', toggleModal);
+
+  function toggleModal() {
+    refs.modal.classList.toggle('is-hidden');
+    refs.modal.classList.toggle('active');
+  }
+})();
