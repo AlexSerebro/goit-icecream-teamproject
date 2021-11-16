@@ -223,7 +223,8 @@
   border: none;
 
   transition: all 0.5s;
-  &:hover {
+  &:hover,
+  &:focus {
     background-color: $light-hover-color;
   }
 }
