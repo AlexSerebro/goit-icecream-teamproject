@@ -1,5 +1,5 @@
 .customer {
-  @include section(80px, 128px);
+  @include section(40px, 128px);
   background-color: $light-bg-color;
   text-align: center;
   padding-left: 20px;
@@ -8,14 +8,14 @@
   margin-left: auto;
   margin-right: auto;
   @media screen and (min-width: $tablet) {
-    @include section(121px, 166px);
+    @include section(62px, 166px);
     padding-left: 74px;
     padding-right: 74px;
     max-width: $tablet;
   }
 
   @media screen and (min-width: $desctop) {
-    @include section(123px, 179px);
+    @include section(62px, 179px);
     padding-left: 74px;
     padding-right: 74px;
     max-width: $desctop;
