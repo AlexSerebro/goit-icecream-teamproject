@@ -462,6 +462,43 @@
   }
 }
 
+.arrow-top {
+  display: block;
+  position: fixed;
+  z-index: 20;
+  right: 20px;
+  bottom: 20px;
+  width: 40px;
+  border-radius: 50%;
+  height: 40px;
+  background-image: url(/images/button-arrow-480@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: rotate(-90deg);
+  box-shadow: 0 0 1px #000;
+
+  @media screen and (max-width: 1279px) {
+    width: 25px;
+    height: 25px;
+    right: 15px;
+    bottom: 15px;
+  }
+
+  &:not(.ok) {
+    visibility: hidden;
+    opacity: 0;
+  }
+  .ok {
+    visibility: visible;
+    opacity: 1;
+  }
+  @media all and (max-width: 300px) {
+    .ok {
+      display: none;
+    }
+  }
+}
+
 ////animate css
 
 // @keyframes pulse {
