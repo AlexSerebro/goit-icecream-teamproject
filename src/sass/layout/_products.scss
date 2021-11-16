@@ -218,15 +218,15 @@
 
   &__description,
   &__description_reversed {
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     @include font(DM Sans, 14px, 700, 1.52, 0.04em, $light-bg-color);
     @media screen and (min-width: $tablet) {
       @include font(DM Sans, 14px, 700, 1.76, 0.04em, $light-bg-color);
-      margin-bottom: 40px;
+      margin-bottom: 80px;
     }
     @media screen and (min-width: $desctop) {
       @include font(DM Sans, 16px, 700, 1.72, 0.04em, $light-bg-color);
-      margin-bottom: 62px;
+      margin-bottom: 102px;
     }
   }
 }
@@ -238,6 +238,10 @@
   border: none;
   padding: 0;
   cursor: pointer;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 41px;
   background-image: url(/images/button-arrow-480.png);
   background-size: contain;
 
@@ -247,12 +251,14 @@
 
   @media screen and (min-width: $tablet) {
     background-image: url(/images/button-arrow-768.png);
+    bottom: 40px;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(/images/button-arrow-768@2x.png);
     }
   }
 
   @media screen and (min-width: $desctop) {
+    bottom: 50px;
     background-image: url(/images/button-arrow-1280.png);
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url(/images/button-arrow-1280@2x.png);
