@@ -16,11 +16,11 @@ new Swiper('.reviews__slider', {
    },
    speed: 800,
 
-   effect: 'flip',
-   flipEffect: {
-      slideShadows: false,
-      limitRotation: true,
-   },
+   // effect: 'flip',
+   // flipEffect: {
+   //    slideShadows: false,
+   //    limitRotation: true,
+   // },
    
    
 
