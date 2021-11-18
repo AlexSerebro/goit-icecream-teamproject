@@ -160,18 +160,18 @@
 .ice-cream__img {
   position: absolute;
   z-index: 2;
-  top: 10px;
+  top: 13px;
   left: 81px;
 
   animation: up 2s;
 
   @media screen and (min-width: $tablet) {
-    top: 38px;
+    top: 40px;
     left: 71px;
   }
 
   @media screen and (min-width: $desctop) {
-    top: 64px;
+    top: 66px;
     left: 119px;
   }
 }
